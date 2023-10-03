@@ -1,42 +1,50 @@
-html, body {
+@font-face {
+    font-family: Norse;
+    src: url('./assets/Norse-Bold.otf');
+} 
+html {
     height: 100%;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    display: flex;
+    min-height: 100%;
+}
 *, *::before, *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 
-body {
-    display: flex;
-}
 
-main {
-    flex: 2 1 0;
-}
+/*Left Side*/
 
 .bg-image {
-    flex: 1 1 0;
-    background-image: url('./img/unsplash-photo-2.jpg');
-    background-attachment: fixed;
-    background-size: 50%;
-    background-position: 81% 0%;
+    min-width: clamp(20rem, 40vw, 40rem);
+    background: url('./assets/unsplash-photo-2.jpg') no-repeat;
+    background-size: 55rem;
+    background-position: center 0%;
+    min-height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .banner {
     width: 100%;
-    padding: 1rem 0;
-    margin-top: 9rem;
+    padding: 0.5rem 0;
+    margin-top: 9.75rem;
     background-color: rgba(0,0,0,0.3);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+}
+
+.banner p {
+    margin: 0;
+    font-size: 5rem;
+    font-family: Norse;
 }
 
 img {
@@ -44,12 +52,9 @@ img {
     height: auto;
 }
 
-.bg-image p {
-    color: white;
-}
-
 .img-source, .img-source a {
     color: black;
     align-self: flex-start;
     font-size: 0.8rem;
+    padding: 0.125rem;
 }
