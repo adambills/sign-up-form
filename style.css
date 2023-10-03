@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    flex: 5 1 0;
+}
+
+.bg-image {
+    flex: 2 1 0;
+    background-image: url('./img/unsplash-photo-2.jpg');
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: 76% 0%;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+.bg-image p {
+    color: white;
+}
