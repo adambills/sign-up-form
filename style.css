@@ -21,21 +21,22 @@ body {
 
 .bg-image {
     min-width: clamp(20rem, 40vw, 40rem);
-    background: url('./assets/unsplash-photo-2.jpg') no-repeat;
+    background: url('./assets/unsplash-photo.jpg') no-repeat;
     background-size: 55rem;
-    background-position: center 0%;
+    background-position: center 80%;
     min-height: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     color: white;
 }
 
 .banner {
     width: 100%;
     padding: 0.5rem 0;
-    margin-top: 9.75rem;
-    background-color: rgba(0,0,0,0.3);
+    margin-top: 11rem;
+    background-color: rgba(0,0,0,0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,8 +54,26 @@ img {
 }
 
 .img-source, .img-source a {
-    color: black;
+    color: white;
     align-self: flex-start;
     font-size: 0.8rem;
     padding: 0.125rem;
+}
+
+/* Right Side */
+
+main {
+    background-color: #fffcf2;
+    color: #1A1C11;
+    flex: 1;
+    padding: 10rem 4rem;
+}
+
+main p {
+    font-size: 1.5rem;
+    max-width: 70ch;
+}
+
+main > p {
+    margin-bottom: 3rem;
 }
