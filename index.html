@@ -14,39 +14,51 @@
             <p>ODIN</p>
         </div>
         <div class="img-source">
-            Photo by <a href="https://unsplash.com/@geraninmo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Geranimo</a> on <a href="https://unsplash.com/photos/Kcxv7Gz7wmw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@mcsheffrey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Connor McSheffrey</a> on <a href="https://unsplash.com/photos/I1Voe0IO9tg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
         </div>
     </div>
     <main>
-        <p>This is not a real online service! You know you need something like this in your life. Sign up now to get started.
-        </p>
-        <p>You know you want to.</p>
+        <div>
+            <p style="margin: 0;">This is not a real online service! You know you need something like this in your life.</p>
+            <p>Sign up <i>now</i> to get started.</p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
         <form action="">
-            <div>
-                <p>Let's do this!</p>
+            <div class="input-container">
                 <div>
-                    <label for="">FIRST NAME</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">LAST NAME</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">EMAIL</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">PHONE NUMBER</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">PASSWORD</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">CONFIRM PASSWORD</label>
-                    <input type="text">
+                    <p>Let's do this!</p>
+                    <span><span aria-label="required">*</span>Required</span>
+                    <div class="form-row">
+                        <div>
+                            <label for="firstname">FIRST NAME<span aria-label="required">*</span></label>
+                            <input id="firstname" type="text" required>
+                        </div>
+                        <div>
+                            <label for="lastname">LAST NAME<span aria-label="required">*</span></label>
+                            <input id="lastname" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="email">EMAIL<span aria-label="required">*</span></label>
+                            <input id="email" type="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input id="phone" type="text" inputmode="numeric">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="password">PASSWORD<span aria-label="required">*</span></label>
+                            <input id="password" type="password" required>
+                        </div>
+                        <div>
+                            <label for="confirm">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+                            <input id="confirm" type="password" required>
+                        </div>
+                    </div>
                 </div>
             </div>
             <button></button>
