@@ -24,7 +24,7 @@
             <p>Sign up <i>now</i> to get started.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
-        <form action="">
+        <form action="" method="GET">
             <div class="input-container">
                 <div>
                     <p>Let's do this!</p>
@@ -32,17 +32,17 @@
                     <div class="form-row">
                         <div>
                             <label for="firstname">FIRST NAME<span aria-label="required">*</span></label>
-                            <input id="firstname" type="text" required>
+                            <input id="firstname" type="text">
                         </div>
                         <div>
                             <label for="lastname">LAST NAME<span aria-label="required">*</span></label>
-                            <input id="lastname" type="text" required>
+                            <input id="lastname" type="text">
                         </div>
                     </div>
                     <div class="form-row">
                         <div>
                             <label for="email">EMAIL<span aria-label="required">*</span></label>
-                            <input id="email" type="email" required>
+                            <input id="email" type="email">
                         </div>
                         <div>
                             <label for="phone">PHONE NUMBER</label>
@@ -52,11 +52,13 @@
                     <div class="form-row">
                         <div>
                             <label for="password">PASSWORD<span aria-label="required">*</span></label>
-                            <input id="password" type="password" required>
+                            <input id="password" type="password">
+                            <!-- <input id="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> -->
                         </div>
                         <div>
                             <label for="confirm">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-                            <input id="confirm" type="password" required>
+                            <input id="confirm" type="password">
+                            <!-- <input id="confirm" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> -->
                         </div>
                     </div>
                 </div>
@@ -67,5 +69,6 @@
             </div>
         </form>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>

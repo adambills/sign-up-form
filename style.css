@@ -123,6 +123,13 @@ input {
     border-radius: 0.25rem;
 }
 
+input:focus {
+    outline-color: #819ce9;
+    box-shadow: 1px 2px 2px lightgray;
+}
+input:invalid {
+    outline-color: red;
+}
 label {
     letter-spacing: 0.125rem;
 }
@@ -148,5 +155,18 @@ button {
     border-radius: 0.25rem;
     font-size: 1rem;
     border: none;
+    transition: all 0.1s ease;
 }
+
+button:hover {
+    background-color: #6d8558;
+    box-shadow: 0px 0px 1px 1px #6d8558;
+}
+
+button.clicked {
+    transform: scale(0.95);
+    background-color: #455538;
+}
+
+
 
