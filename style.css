@@ -89,7 +89,6 @@ main > div > p {
 } 
 
 form {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.75rem;
     font-weight: 500;
     width: 100%;
@@ -97,7 +96,7 @@ form {
 
 .input-container {
     width: 100%;
-    box-shadow: 4px 4px 10px #D9D4C9;
+    box-shadow: 4px 8px 10px #D9D4C9;
     background-color: #fffdf7;
 }
 
@@ -106,6 +105,7 @@ form {
 }
 
 .form-row {
+    font-family: 'Roboto Mono', monospace;
     margin-top: 2rem;
     display: flex;
     gap: 3rem;
@@ -117,10 +117,36 @@ form {
 }
 
 input {
-    width: 20rem;
+    width: 16rem;
+    background-color: #fffdf7;
+    border: 2px solid #E5E7EB;
+    border-radius: 0.25rem;
 }
 
 label {
     letter-spacing: 0.125rem;
+}
+
+.submit {
+    padding: 2rem 4rem;
+}
+
+.submit p {
+    font-size: 1rem;
+}
+
+.submit a {
+    color: #596D48;
+    font-weight: 600;
+}
+
+button {
+    margin-bottom: 2rem;
+    background-color: #596D48;
+    color: #fffdf7;
+    padding: 0.5rem 4rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    border: none;
 }
 
