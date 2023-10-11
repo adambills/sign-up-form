@@ -20,8 +20,8 @@
     </div>
     <main>
         <div>
-            <p style="margin: 0;">This is not a real online service! You know you need something like this in your life.</p>
-            <p>Sign up <i>now</i> to get started.</p>
+            <p style="margin: 0;">This is not a real online service! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sign up now to get started.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
         <form action="" method="GET">
@@ -32,17 +32,17 @@
                     <div class="form-row">
                         <div>
                             <label for="firstname">FIRST NAME<span aria-label="required">*</span></label>
-                            <input id="firstname" type="text">
+                            <input id="firstname" type="text" required>
                         </div>
                         <div>
                             <label for="lastname">LAST NAME<span aria-label="required">*</span></label>
-                            <input id="lastname" type="text">
+                            <input id="lastname" type="text" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div>
                             <label for="email">EMAIL<span aria-label="required">*</span></label>
-                            <input id="email" type="email">
+                            <input id="email" type="email" required>
                         </div>
                         <div>
                             <label for="phone">PHONE NUMBER</label>
@@ -51,14 +51,12 @@
                     </div>
                     <div class="form-row">
                         <div>
-                            <label for="password">PASSWORD<span aria-label="required">*</span></label>
-                            <input id="password" type="password">
-                            <!-- <input id="password" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> -->
+                            <label for="password">PASSWORD<span aria-label="required">*</span> <span id="requirements">(minimum 8 characters)</span></label>
+                            <input id="password" type="password" minlength="8" required>
                         </div>
                         <div>
                             <label for="confirm">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-                            <input id="confirm" type="password">
-                            <!-- <input id="confirm" type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required> -->
+                            <input id="confirm" type="password" minlength="8" required>
                         </div>
                     </div>
                 </div>
